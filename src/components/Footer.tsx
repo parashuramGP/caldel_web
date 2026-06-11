@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Twitter, Mail } from "lucide-react";
+import { Instagram } from "lucide-react";
+
+const INSTAGRAM_URL = "https://www.instagram.com/caldel.blr?igsh=M2d6eTcyaWJkdGVo";
 
 export function Footer() {
   return (
@@ -21,19 +23,20 @@ export function Footer() {
           <span className="tracking-[0.4em] text-sm font-bold">CALDEL</span>
         </motion.div>
 
-        <div className="flex items-center gap-3">
-          {[Instagram, Twitter, Mail].map((Icon, i) => (
-            <motion.a
-              key={i}
-              href="#"
-              whileHover={{ y: -3, scale: 1.05 }}
-              transition={{ duration: 0.2 }}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white/70 transition hover:border-gold hover:text-gold"
-            >
-              <Icon size={15} />
-            </motion.a>
-          ))}
-        </div>
+        <motion.a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow CALDEL on Instagram"
+          whileHover={{ y: -3, scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+          className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-white/70 transition hover:border-gold hover:bg-gold hover:text-dark1"
+        >
+          <Instagram size={15} />
+          <span className="text-[10px] font-bold uppercase tracking-[0.25em]">
+            @caldel.blr
+          </span>
+        </motion.a>
 
         <div className="text-[11px] text-white/40">
           © {new Date().getFullYear()} CALDEL · Crafted in India
