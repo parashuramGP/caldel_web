@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Netlify auto-detects Next.js and applies @netlify/plugin-nextjs.
+# Set SUPABASE_URL and SUPABASE_SERVICE_KEY in Site settings → Environment variables.
