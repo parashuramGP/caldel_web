@@ -92,7 +92,7 @@ export function WaitlistForm() {
                 exit={{ opacity: 0, y: -6 }}
                 className="relative flex items-center gap-2"
               >
-                <span>Join Waitlist</span>
+                <span>Join</span>
                 <ArrowRight size={14} />
               </motion.span>
             )}

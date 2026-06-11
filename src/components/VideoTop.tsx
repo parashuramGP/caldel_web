@@ -52,23 +52,6 @@ export function VideoTop() {
       <div className="absolute -right-32 bottom-0 h-[400px] w-[400px] rounded-full bg-gold/10 blur-[120px]" />
 
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative mb-6 flex flex-col items-center text-center md:mb-10"
-      >
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 py-1.5 backdrop-blur">
-          <span className="relative flex h-1.5 w-1.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold/70" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold" />
-          </span>
-          <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold">
-            Watch the story
-          </span>
-        </div>
-      </motion.div>
-
-      <motion.div
         ref={containerRef}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

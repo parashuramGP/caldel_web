@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { MapPin } from "lucide-react";
 import { WaitlistForm } from "@/components/WaitlistForm";
 import { CountdownClock } from "@/components/CountdownClock";
 import { VideoTop } from "@/components/VideoTop";
@@ -86,24 +87,16 @@ export default function LandingPage() {
             <WaitlistForm />
           </motion.div>
 
-          {/* Trust row */}
+          {/* Launch city */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.8, duration: 1 }}
-            className="mt-16 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-[10px] uppercase tracking-[0.3em] text-white/40"
+            className="mt-16 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 py-2 backdrop-blur"
           >
-            <span className="flex items-center gap-2">
-              <span className="h-px w-6 bg-white/20" /> Bangalore
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="h-px w-6 bg-white/20" /> Mumbai
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="h-px w-6 bg-white/20" /> Delhi
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="h-px w-6 bg-white/20" /> Hyderabad
+            <MapPin size={13} className="text-gold" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/70">
+              Launching in Bangalore
             </span>
           </motion.div>
         </div>

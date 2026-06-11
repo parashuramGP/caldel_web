@@ -41,8 +41,8 @@ export function TopNav() {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            whileHover={{ letterSpacing: "0.6em" }}
-            className="select-none text-base font-bold tracking-[0.4em] text-white md:text-lg"
+            whileHover={{ letterSpacing: "0.35em" }}
+            className="select-none font-display text-xl font-light tracking-[0.22em] text-white md:text-2xl"
           >
             CALDEL
           </motion.span>
