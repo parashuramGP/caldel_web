@@ -1,5 +1,5 @@
 {
-  "name": "luxe-web",
+  "name": "caldel-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.49.4",
-    "clsx": "2.1.1",
-    "framer-motion": "11.18.2",
-    "lucide-react": "0.469.0",
     "next": "^15.5.19",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "zustand": "5.0.3"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@types/node": "22.10.7",
